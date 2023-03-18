@@ -2,11 +2,11 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: circleci/python:3.7
+      - image: circleci/python:3.8
     steps:
       - checkout
       - run: pip install -r requirements.txt
-      - run: pytest -s -v --cov
+      - run: pytest
 
 workflows:
   build-and-test:
