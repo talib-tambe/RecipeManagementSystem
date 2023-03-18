@@ -6,15 +6,9 @@ jobs:
     steps:
       - checkout
       - run: pip install -r requirements.txt
-      - run: pytest
+      - run: pytest -s -v --cov
 
 workflows:
   build-and-test:
     jobs:
       - test
-
--run:
-      name: run tests
-      command: |
-        . venv/bin/activate
-        pytest -s -v --cov
