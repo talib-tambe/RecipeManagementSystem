@@ -2,6 +2,8 @@
 import random
 
 
+
+
 class Recipe:
 
     def __init__(self, id, name, ingredients, instructions, category, rating):
