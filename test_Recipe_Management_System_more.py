@@ -119,6 +119,7 @@ class TestRecipeManager(unittest.TestCase):
 
         with self.assertRaises(Exception):
             self.assertEqual(self.manager.view_recipe(), categoryList)
+            
 
 
 if __name__ == '__main__':
